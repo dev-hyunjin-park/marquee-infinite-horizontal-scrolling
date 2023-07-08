@@ -1,0 +1,25 @@
+h1,
+p {
+  font-family: Lato;
+}
+.marquee-container {
+  border: 1px solid red;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-text {
+  width: 100%;
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
